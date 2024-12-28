@@ -68,11 +68,19 @@ const phaseData = ref([
 import * as XLSX from 'xlsx';
 
 function exportData() {
+    // 使用flatMap进行扁平化
+    const flattenedData = phaseData.value.flatMap(item =>
+        item.period.map(period => ({
+            name: item.name,
+            start: period.start,
+            end: period.end
+        }))
+    );
     // 创建一个新的工作簿
     const wb = XLSX.utils.book_new();
 
     // 将数据转换为工作表
-    const ws = XLSX.utils.json_to_sheet(this.phaseData);
+    const ws = XLSX.utils.json_to_sheet(flattenedData);
 
     // 将工作表添加到工作簿中
     XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
