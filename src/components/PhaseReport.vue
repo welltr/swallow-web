@@ -53,26 +53,16 @@ const phaseTitles = [
     '喉前庭关闭',
     '整体吞咽',
 ]
-// const phaseData = [
-//     { name: '口腔运送', period: [{ start: 3.306427002, end: 4.595542908 }, { start: 4.347145081, end: 5.587064743 }] },
-//     { name: '软腭上抬', period: [{ start: 4.347145081, end: 5.587064743 }, { start: 20.627323, end: 20.639129 }] },
-//     { name: '舌骨运动', period: [{ start: 20.4372097, end: 20.479226 }, { start: 20.627323, end: 20.639129 }] },
-//     { name: '食管上括约肌开放', period: [{ start: 20.443, end: 20.467484 }, { start: 20.627323, end: 20.639129 }] },
-//     { name: '咽期吞咽启动', period: [{ start: 20.434613, end: 20.439258 }, { start: 20.627323, end: 20.639129 }] },
-//     { name: '咽腔运送', period: [{ start: 20.437419, end: 20.469387 }, { start: 20.627323, end: 20.639129 }] },
-//     { name: '喉前庭关闭', period: [{ start: 20.441452, end: 20.462355 }, { start: 20.627323, end: 20.639129 }] },
-//     { name: '整体吞咽', period: [{ start: 20.427322581, end: 20.4792258206 }, { start: 20.627323, end: 20.639129 }] }
-// ]
 
 const phaseData = ref([
-    { name: '口腔运送', period: [{ start: 3.306427002, end: 4.595542908 }, { start: 39.04755402, end: 39.43250656 }] },
-    { name: '软腭上抬', period: [{ start: 4.347145081, end: 5.587064743 }, { start: 39.03142548, end: 39.48682404 }] },
-    { name: '舌骨运动', period: [{ start: 4.508612156, end: 5.967010021 }, { start: 39.93222046, end: 40.56099701 }] },
-    { name: '食管上括约肌开放', period: [{ start: 4.924317837, end: 5.744679451 }, { start: 39.92774963, end: 40.63414764 }] },
-    { name: '咽期吞咽启动', period: [{ start: 4.659225464, end: 5.73805654 }, { start: 39.35247421, end: 40.67387009 }] },
-    { name: '咽腔运送', period: [{ start: 4.336047649, end: 5.631289482 }, { start: 39.17718887, end: 40.67900467 }] },
-    { name: '喉前庭关闭', period: [{ start: 4.867924213, end: 5.609247208 }, { start: 39.32429504, end: 41.08495331 }] },
-    { name: '整体吞咽', period: [{ start: 3.306427002, end: 5.967010021 }, { start: 39.03142548, end: 41.08495331 }] }
+    { name: '口腔运送', period: [{ start: 3.306, end: 4.595 }, { start: 39.047, end: 39.432 }] },
+    { name: '软腭上抬', period: [{ start: 4.347, end: 5.587 }, { start: 39.031, end: 39.486 }] },
+    { name: '舌骨运动', period: [{ start: 4.508, end: 5.967 }, { start: 39.932, end: 40.560 }] },
+    { name: '食管上括约肌开放', period: [{ start: 4.924, end: 5.744 }, { start: 39.927, end: 40.634 }] },
+    { name: '咽期吞咽启动', period: [{ start: 4.659, end: 5.738 }, { start: 39.352, end: 40.673 }] },
+    { name: '咽腔运送', period: [{ start: 4.336, end: 5.631 }, { start: 39.177, end: 40.679 }] },
+    { name: '喉前庭关闭', period: [{ start: 4.867, end: 5.609 }, { start: 39.324, end: 41.084 }] },
+    { name: '整体吞咽', period: [{ start: 3.306, end: 5.967 }, { start: 39.031, end: 41.084 }] }
 ])
 
 import * as XLSX from 'xlsx';
